@@ -20,6 +20,6 @@ provider "aws"{
  # Resource types always start with the provider name followed by an 
  # underscore. The aws_vpc resource type belongs to the aws provider
 
-resource "aws_vpc" "example" {
+resource "aws_vpc" "main" {
     cidr_block = "10.0.0.0/16"
 }
