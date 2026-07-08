@@ -6,14 +6,25 @@ This project documents my journey toward becoming a Cloud Engineer by building p
 
 ## Current Progress
 
-- [ ] Create VPC
-- [ ] Create Public Subnet
-- [ ] Create Internet Gateway
-- [ ] Create Route Table
-- [ ] Create Security Group
-- [ ] Deploy EC2
-- [ ] SSH into EC2
-- [ ] Install Nginx
+terraform-aws-web-server/terraform
+
+README.md
+
+network.tf
+
+security.tf
+
+compute.tf
+
+keypair.tf        
+
+outputs.tf       
+
+user-data.sh
+
+.gitignore
+
+LICENSE
 
 ## Technologies
 
