@@ -28,7 +28,7 @@ LICENSE
 
 ## Technologies
 
-- Terraform
-- AWS
-- Git
-- Linux
+Terraform
+AWS
+Git
+Linux
