@@ -2,7 +2,7 @@
 
 ## Goal
 
-This project documents my journey toward becoming a Cloud Engineer by building production-style AWS infrastructure using Terraform.
+This project shows my skills and documents my journey toward becoming a Cloud Engineer by building production-style AWS infrastructure using Terraform.
 
 ## Current Progress
 
