@@ -15,11 +15,12 @@ data "aws_ami" "ubuntu" {
 }
 
 resource "aws_instance" "webserver" {
-  user_data     = file("${path.module}/user-data.sh")
-  ami           = data.aws_ami.ubuntu.id
-  instance_type = "t3.micro"
-  subnet_id     = aws_subnet.public.id
-  key_name      = aws_key_pair.main.key_name
+  user_data            = file("${path.module}/user-data.sh")
+  iam_instance_profile = aws_iam_instance_profile.ssm_profile.name
+  ami                  = data.aws_ami.ubuntu.id
+  instance_type        = "t3.micro"
+  subnet_id            = aws_subnet.public.id
+  key_name             = aws_key_pair.main.key_name
   vpc_security_group_ids = [
     aws_security_group.web.id
   ]
@@ -28,3 +29,7 @@ resource "aws_instance" "webserver" {
   }
 }
 
+resource "aws_iam_instance_profile" "ssm_profile" {
+  name = "ec2_ssm_profile"
+  role = aws_iam_role.ec2_role.name
+}
