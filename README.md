@@ -28,9 +28,9 @@ LICENSE
 
 ## Technologies
 
-Terraform
-AWS
-Git
+Terraform,
+AWS,
+Git,
 Linux
 
 <img width="1307" height="469" alt="image" src="https://github.com/user-attachments/assets/100b4319-752e-4516-977a-3243dc201c84" />
