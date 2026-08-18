@@ -8,7 +8,7 @@ resource "aws_ssm_patch_baseline" "production" {
 
     patch_filter {
       key    = "PRODUCT"
-      values = ["Ubuntu25.04"]
+      values = ["Ubuntu22.04"]
     }
   }
 }
@@ -56,6 +56,5 @@ resource "aws_ssm_maintenance_window_task" "patching" {
       }
     }
   }
-
 }
 

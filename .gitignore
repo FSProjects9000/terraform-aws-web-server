@@ -25,3 +25,11 @@ override.tf.json
 LICENSE
 
 LICENSE.*
+
+*.deb
+
+sts *
+
+sts get-caller-identity 
+
+session-manager-plugin.deb
